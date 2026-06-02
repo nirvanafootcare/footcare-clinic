@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {
   ArrowRight, CheckCircle2, Scissors, Shield, Heart,
-  Stethoscope, Zap, Home, Droplets, Star, Phone
+  Stethoscope, Home, Droplets, Star, Phone
 } from 'lucide-react'
 
 // All foot-care specific images from Pexels (free, no copyright)
@@ -15,7 +15,6 @@ const P = (id: number) =>
 const serviceImages: Record<string, string> = {
   'medical-pedicure': P(17056222), // close-up woman doing pedicure
   'fungal-nail':      P(9789204),  // nail polish on toenails
-  'ingrown-nail':     P(7755212),  // person getting nail file treatment
   'callus-corn':      P(4963838),  // close-up woman's feet (pedicured)
   'diabetic':         P(8600448),  // applying cream/care to foot
   'dry-heel':         P(8600448),  // foot cream treatment
@@ -72,23 +71,6 @@ const services = [
       'Patient education on prevention',
     ],
     note: 'Multiple sessions are typically required. Results are gradual as the nail grows out clear.',
-  },
-  {
-    id: 'ingrown-nail',
-    icon: Zap,
-    title: 'Ingrown Nail Therapy',
-    badge: 'Pain-Free',
-    badgeColor: 'bg-violet-600',
-    iconColor: 'bg-violet-50 text-violet-600',
-    desc: 'A gentle, non-surgical approach to relieving ingrown toenails — easing pressure on the painful nail edge and supporting the nail to grow back in a healthy shape.',
-    includes: [
-      'Ingrown nail assessment',
-      'Edge removal where needed',
-      'Pain relief immediate on application',
-      'Follow-up monitoring visits',
-      'Patient education on nail hygiene',
-    ],
-    note: 'Most patients feel immediate relief. Treatment is suitable for everyday activity and normal footwear.',
   },
   {
     id: 'callus-corn',
@@ -155,7 +137,7 @@ const services = [
       'All Medical Footcare Services',
       'Fully sterile portable kit',
       'Flexible scheduling',
-      'Surrey, White Rock, Langley, North Delta, Vancouver',
+      'Richmond, Downtown, New West, Ladner',
       'Familiar, comfortable environment',
       'Ideal for seniors and care homes',
     ],

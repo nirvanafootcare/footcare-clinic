@@ -25,7 +25,7 @@ export default function ContactPage() {
 
   const [formState, setFormState] = useState<FormState>('idle')
   const [form, setForm] = useState({
-    name: '', email: '', phone: '', message: '',
+    email: '', phone: '', message: '',
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -131,7 +131,7 @@ export default function ContactPage() {
             <div className="card p-6 reveal">
               <h3 className="font-bold text-slate-800 mb-3">Home Visit Areas</h3>
               <div className="flex flex-wrap gap-2">
-                {['Vancouver', 'West Side', 'Burnaby', 'Surrey', 'White Rock', 'Langley', 'North Delta', 'Aldergrove'].map(a => (
+                {['Richmond', 'Downtown', 'New West', 'Ladner'].map(a => (
                   <span key={a} className="bg-teal-50 text-teal-700 border border-teal-100 text-xs font-medium px-2.5 py-1 rounded-full">
                     {a}
                   </span>
@@ -150,13 +150,13 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-800">Request Received!</h3>
                 <p className="text-slate-500 max-w-sm">
-                  Thank you, <strong>{form.name}</strong>. We&apos;ll reach out to <strong>{form.email || form.phone}</strong> within one business day to confirm your appointment.
+                  Footcare nurse will contact you within one business day to confirm your appointment.
                 </p>
                 <p className="text-sm text-slate-400">
                   In the meantime, if you have any questions, call us at <a href="tel:17788618502" className="text-teal-600 font-medium">+1 (778) 861-8502</a>.
                 </p>
                 <button
-                  onClick={() => { setFormState('idle'); setForm({ name: '', email: '', phone: '', message: '' }) }}
+                  onClick={() => { setFormState('idle'); setForm({ email: '', phone: '', message: '' }) }}
                   className="btn-outline mt-2"
                 >
                   Book Another Appointment
@@ -167,18 +167,6 @@ export default function ContactPage() {
                 <h2 className="text-xl font-bold text-slate-800 mb-6">Appointment Request</h2>
 
                 <div className="grid sm:grid-cols-2 gap-5 mb-5">
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-1.5">Full Name *</label>
-                    <input
-                      type="text"
-                      name="name"
-                      required
-                      value={form.name}
-                      onChange={handleChange}
-                      placeholder="Jane Smith"
-                      className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition"
-                    />
-                  </div>
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1.5">Phone Number *</label>
                     <input
@@ -191,18 +179,17 @@ export default function ContactPage() {
                       className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition"
                     />
                   </div>
-                </div>
-
-                <div className="mb-5">
-                  <label className="block text-sm font-medium text-slate-700 mb-1.5">Email Address</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    placeholder="jane@example.com"
-                    className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition"
-                  />
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-1.5">Email Address</label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      placeholder="jane@example.com"
+                      className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition"
+                    />
+                  </div>
                 </div>
 
                 <div className="mb-6">

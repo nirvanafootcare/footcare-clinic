@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {
   ArrowRight, CheckCircle2, Phone, MapPin, Star, Shield,
-  Heart, Scissors, Stethoscope, Home, Zap, Users, Award, Clock
+  Heart, Scissors, Stethoscope, Home, Users, Award, Clock
 } from 'lucide-react'
 
 function useReveal() {
@@ -51,10 +51,9 @@ const images = {
 
 const services = [
   { icon: Scissors,    title: 'Medical Pedicures',      desc: 'Clinical-grade nail and skin care in a sterile setting — real results for healthy, pain-free feet.',          color: 'bg-teal-50 text-teal-600',      img: P(17056222, 400, 280) },
-  { icon: Shield,      title: 'Fungal Nail Treatment',  desc: 'ToeFX laser therapy and topical protocols to eliminate fungal infections and restore clear, healthy nails.',    color: 'bg-emerald-50 text-emerald-600', img: P(9789204,  400, 280) },
+  { icon: Shield,      title: 'Fungal Nail Treatment',  desc: 'Topical protocols to eliminate fungal infections and restore clear, healthy nails.',    color: 'bg-emerald-50 text-emerald-600', img: P(9789204,  400, 280) },
   { icon: Heart,       title: 'Diabetic Foot Care',     desc: 'Specialized assessment for patients with diabetes, circulation issues, or neuropathy — preventing complications.', color: 'bg-rose-50 text-rose-500',       img: P(8600448,  400, 280) },
   { icon: Stethoscope, title: 'Callus & Corn Removal',  desc: 'Sterile reduction of painful calluses and corns using professional-grade instruments — immediate relief.',        color: 'bg-amber-50 text-amber-600',     img: P(4963838,  400, 280) },
-  { icon: Zap,         title: 'Ingrown Nail Therapy',   desc: 'Onyfix nail bracing to painlessly correct and prevent ingrown nails without surgery.',                           color: 'bg-violet-50 text-violet-600',   img: P(7755212,  400, 280) },
   { icon: Home,        title: 'In-Home Nursing Visits', desc: 'Full foot care services brought to your door — ideal for seniors, post-surgery patients, or limited mobility.',    color: 'bg-sky-50 text-sky-600',         img: P(6628700,  400, 280) },
 ]
 

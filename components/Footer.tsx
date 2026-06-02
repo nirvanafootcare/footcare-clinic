@@ -57,7 +57,6 @@ export default function Footer() {
               'Nail Care & Thinning',
               'Callus & Corn Removal',
               'Fungal Nail Treatment',
-              'Ingrown Nail Therapy',
               'Diabetic Foot Care',
               'Home Visits',
             ].map(s => (

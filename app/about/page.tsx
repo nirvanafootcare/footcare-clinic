@@ -50,9 +50,6 @@ const credentials = [
   'Licensed Practical Nurse — BC College of Nurses and Midwives',
   'Certified in Advanced Foot Care Nursing',
   'Lower Mainland Foot Care Nurses Association member',
-  'ToeFX Certified Practitioners',
-  'Onyfix Certified Applicators',
-  'ABPI Circulatory Testing Trained',
 ]
 
 export default function AboutPage() {
@@ -90,7 +87,7 @@ export default function AboutPage() {
             About Nirvana Foot Care
           </h1>
           <p className="text-teal-100 text-lg max-w-2xl mx-auto leading-relaxed">
-            We believe everyone deserves professional, clinical-level foot care delivered with compassion. Nurse has been caring for Vancouver feet since 2010.
+            We believe everyone deserves professional, clinical-level foot care delivered with compassion. Nurse has been caring for Vancouver feet since 2014.
           </p>
         </div>
       </section>
@@ -108,7 +105,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
-                Nirvana Foot Care was founded in 2010 by a nurse who saw a gap in the community: patients with diabetes, circulation problems, and mobility challenges were struggling to access safe, professional foot care. Salon pedicures posed real health risks, and seeing a podiatrist for routine nail and skin maintenance felt like overkill.
+                Nirvana Foot Care was founded in 2014 by a nurse who saw a gap in the community: patients with diabetes, circulation problems, and mobility challenges were struggling to access safe, professional foot care. Salon pedicures posed real health risks, and seeing a podiatrist for routine nail and skin maintenance felt like overkill.
               </p>
               <p>
                 Our founders believed that nursing foot care — performed by a licensed nurse to clinical standards — was the answer. They established a clinic that combined hospital-grade sterilization with the warmth and accessibility of a community health practice.
@@ -131,14 +128,14 @@ export default function AboutPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-br from-teal-900/30 to-transparent" />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow">
-                <div className="text-teal-700 font-bold text-sm">Established 2010</div>
+                <div className="text-teal-700 font-bold text-sm">Established 2014</div>
                 <div className="text-slate-500 text-xs">Vancouver, BC</div>
               </div>
             </div>
           {/* Stats */}
           <div className="grid grid-cols-2 gap-4">
             {[
-              { val: '2010', label: 'Year Founded', color: 'bg-teal-600' },
+              { val: '2014', label: 'Year Founded', color: 'bg-teal-600' },
               { val: '3,000+', label: 'Patients Served', color: 'bg-emerald-600' },
               { val: '15+', label: 'Years of Experience', color: 'bg-violet-600' },
               { val: '100%', label: 'Licensed Nurse', color: 'bg-amber-600' },

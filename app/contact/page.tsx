@@ -161,6 +161,7 @@ export default function ContactPage() {
                 </button>
               </div>
             ) : (
+                  <>
                           {/* Book the clinic online */}
             <div className="card p-7 md:p-9 mb-6">
               <h2 className="text-xl font-bold text-slate-800 mb-2">Book the Foot Care Clinic Online</h2>
@@ -250,6 +251,7 @@ export default function ContactPage() {
                   )}
                 </button>
               </form>
+                              </>
             )}
           </div>
         </div>

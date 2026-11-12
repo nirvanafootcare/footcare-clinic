@@ -112,9 +112,7 @@ export default function ContactPage() {
               </h3>
               <ul className="space-y-2.5 text-sm">
                 {[
-                  { day: 'Monday – Friday', hours: '9:00 AM – 5:00 PM', open: true },
-                  { day: 'Saturday – Sunday', hours: 'Closed', open: false },
-                ].map(h => (
+                  { day: 'Monday – Sunday', hours: '8:00 AM – 5:00 PM', open: true },                ].map(h => (
                   <li key={h.day} className="flex justify-between items-center py-1.5 border-b border-slate-50 last:border-0">
                     <span className="text-slate-600">{h.day}</span>
                     <span className={`font-medium ${h.open ? 'text-teal-600' : 'text-slate-400'}`}>{h.hours}</span>

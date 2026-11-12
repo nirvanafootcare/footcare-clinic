@@ -85,8 +85,7 @@ export default function Footer() {
 
           <h4 className="text-white font-semibold text-sm mt-7 mb-4">Hours</h4>
           <ul className="space-y-1.5 text-sm text-slate-400">
-            <li className="flex items-start gap-2"><Clock className="w-3.5 h-3.5 mt-0.5 text-teal-500 shrink-0" /><span>Mon–Fri: 9:00 AM – 5:00 PM</span></li>
-            <li className="pl-5 text-slate-500">Sat–Sun: Closed</li>
+            <li className="flex items-start gap-2"><Clock className="w-3.5 h-3.5 mt-0.5 text-teal-500 shrink-0" /><span>Mon–Sun: 8:00 AM – 5:00 PM</span></li>       
           </ul>
         </div>
 

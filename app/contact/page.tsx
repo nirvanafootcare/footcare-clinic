@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { Phone, Mail, Clock, CheckCircle2, Send, AlertCircle, ArrowRight } from 'lucide-react'
+import { Phone, Mail, Clock, CheckCircle2, Send, AlertCircle } from 'lucide-react'
 
 const UNSPLASH = 'https://images.unsplash.com'
 
@@ -70,7 +70,7 @@ export default function ContactPage() {
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-5">Book an Appointment</h1>
           <p className="text-teal-100 text-lg max-w-xl mx-auto leading-relaxed">
-            Book our December 12 clinic online below, or fill out the form and we&apos;ll get back to you within one business day to confirm your appointment.
+            Fill out the form and we&apos;ll get back to you within one business day to confirm your appointment.
           </p>
         </div>
       </section>
@@ -162,21 +162,6 @@ export default function ContactPage() {
               </div>
             ) : (
                   <>
-                          {/* Book the clinic online */}
-            <div className="card p-7 md:p-9 mb-6">
-              <h2 className="text-xl font-bold text-slate-800 mb-2">Book the Foot Care Clinic Online</h2>
-              <p className="text-slate-500 text-sm leading-relaxed mb-5">
-                Our next in-person clinic is Saturday, December 12, at 8111 Dalemore Road, Richmond. Pick your time and book instantly — 45-minute appointments, $75 per appointment.
-              </p>
-              <a
-                href="https://calendly.com/nirvanafootcare/foot-care-clinic-appointment"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary w-full justify-center text-base"
-              >
-                Book Your Clinic Time <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
         <form onSubmit={handleSubmit} className="card p-7 md:p-9">
                 <h2 className="text-xl font-bold text-slate-800 mb-6">Appointment Request</h2>
 
